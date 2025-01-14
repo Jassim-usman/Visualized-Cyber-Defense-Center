@@ -14,6 +14,8 @@ Wazuh and OpenVAS
                                      Wazuh and TheHive
 Prepare TheHive:
 1.Create a new organization on TheHive web interface and with an administrator account.
+2.In Test Organization, we create a new user with organization administrator privileges.
+
 
 
 
