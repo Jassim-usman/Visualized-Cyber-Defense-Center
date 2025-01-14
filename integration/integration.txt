@@ -87,9 +87,69 @@ The correct ownership for Wazuh 4.3.0 is root:wazuh.
 sudo systemctl restart wazuh-manager
 10.Log into TheHive with our test user account, and we can see Wazuh generated alerts under the “Alerts” tab:
 11.At this point, we can proceed to perform other standard TheHive actions on the alerts, such as creating cases on them or adding them to other existing cases.
-Conclusion:
 
+Conclusion:
 Wazuh is a flexible security solution that integrates well with other solutions. It is open source and gives users the freedom to create and use custom integration scripts. This blog post shows that Wazuh integrates well with TheHive with the aid of custom scripts.
+
+                                                      TheHive and Cortex
+Prerequisites:
+
+1.TheHive: Installed and running (v4 or later recommended).
+2.Cortex: Installed and running.
+3.Connectivity: Ensure TheHive can connect to Cortex (same network or proper firewall rules in place).
+
+Configure Analyzers in Cortex:
+
+1.Ensure Cortex is accessible from TheHive.
+2.Configure Analyzers in Cortex:
+          Go to Cortex’s web UI and enable the analyzers you need.
+          Configure the required settings for each analyzer, such as API keys for third-party services (e.g., VirusTotal, Shodan).
+3.Test Analyzers:
+          Test each enabled analyzer in Cortex to confirm it works correctly.
+
+Configure Cortex in TheHive:
+
+1.Generate API Key in Cortex:
+          Go to Cortex’s web UI → API Keys → Generate a new API key.
+          Copy the API key.
+2.Add Cortex to TheHive:
+          Log in to TheHive as an admin.
+          Navigate to Administration → Connectors → Cortex.
+          Add a new Cortex instance:
+                 Name: Provide a name for the Cortex instance.
+                 URL: Enter the Cortex server URL (e.g., http://<cortex-ip>:<port>).
+                 API Key: Paste the API key generated earlier.
+                 Active: Enable the Cortex connector.
+3.Test the connection.
+
+Link Analyzers to TheHive:
+
+1.Map Cortex Analyzers in TheHive:
+          Go to Administration → Connectors → Cortex.
+          For each enabled analyzer in Cortex, set permissions and link them to TheHive.
+2,Set Default Analyzers (Optional):
+          Define default analyzers for specific types of observables (e.g., URLs, IPs, hashes).
+
+Test the Integration:
+
+1.Create a case or alert in TheHive.
+2.Add observables (e.g., file hash, URL, IP address).
+3.Use the Cortex analyzer by:
+          Clicking Analyze for an observable.
+          Selecting one or more analyzers to run.
+4.Verify that the results from Cortex analyzers appear in TheHive.
+
+Automate with Responders (Optional):
+
+1.Cortex responders can automate actions like blocking an IP, isolating a machine, or notifying teams.
+2.Configure responders in Cortex, then link and trigger them from TheHive.
+
+Troubleshooting:
+
+1.Check logs for errors:
+         TheHive: /var/log/thehive/application.log
+         Cortex: /var/log/cortex/application.log
+2.Verify network connectivity and API key validity.
 
 
 
