@@ -12,6 +12,9 @@ Wazuh and OpenVAS
 
                                      Tools Integration 
                                      Wazuh and TheHive
+Prepare TheHive:
+1.Create a new organization on TheHive web interface and with an administrator account.
+
 
 
 
