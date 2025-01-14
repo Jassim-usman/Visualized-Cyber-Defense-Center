@@ -22,6 +22,7 @@ Prepare TheHive:
 7.Therefore, we need a user on TheHive that can create alerts via the API. 
 8.We create an account with an “analyst” privilege for this purpose.
 9.we generate the API key for the user:
+10.In order to extract the API key, we reveal the key to view and copy it out for future use:
 
 
 
