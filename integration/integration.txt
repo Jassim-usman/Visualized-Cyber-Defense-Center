@@ -15,6 +15,13 @@ Wazuh and OpenVAS
 Prepare TheHive:
 1.Create a new organization on TheHive web interface and with an administrator account.
 2.In Test Organization, we create a new user with organization administrator privileges.
+3.This user has permissions to manage the organization, including creating new users, managing cases, and alerts, amongst others. 
+4.We also create a password for this user so that we can log in to view the dashboard and manage cases. 
+5.This is done by clicking on “New password” beside the user account and entering the desired password.
+6.The integration with Wazuh is possible with the aid of TheHive REST API. 
+7.Therefore, we need a user on TheHive that can create alerts via the API. 
+8.We create an account with an “analyst” privilege for this purpose.
+9.we generate the API key for the user:
 
 
 
