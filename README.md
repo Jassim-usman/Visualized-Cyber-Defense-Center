@@ -1,82 +1,103 @@
-# Visualized-Cyber-Defense-Center
+# 🛡️ Visualized Cyber Defense Center
 
-This project is designed to implement a comprehensive SOC setup, providing an opportunity to explore and experiment with modern SOC architecture. It leverages open-source components available at the time of the first commit, offering a robust foundation for security analysis and operations.
+**Building a robust SOC is crucial.** This project empowers you to explore and implement a modern SOC architecture using open-source tools. Dive into threat detection, analysis, and response!
+
+## 👑 Project Overview
+
+This project provides hands-on experience with a comprehensive SOC setup. We leverage powerful open-source components to create a solid foundation for security analysis and operations.
+
+## 🎯 Goals and Benefits
+
+Our mission is to:
+
+*   ✅ **Centralize Security Monitoring:** Establish a unified platform using open-source technologies.
+*   ✅ **Enhance Incident Response:** Improve detection and response through threat intelligence and automation.
+*   ✅ **Streamline Threat Analysis:** Automate analysis to boost SOC efficiency.
+*   ✅ **Visualize Security Data:** Provide insightful security analytics and visualizations for informed decision-making.
+*   ✅ **Enable Real-Time Threat Hunting:** Facilitate proactive threat hunting with behavioral and signature-based detection.
+*   ✅ **Standardize Incident Handling:** Implement structured incident handling with case management and response workflows.
+
+## 🚀 Use Cases
+
+This project addresses key security use cases:
+
+*   **Centralized Data Collection:** Aggregate logs from diverse sources.
+*   **Data Normalization & Parsing:** Structure data for consistent analysis.
+*   **Security Analytics & Visualization:** Gain insights with Kibana (or similar).
+*   **Incident & Case Management:** Automate case creation from alerts.
+*   **Threat Hunting & Automation:** Proactively hunt and automate responses.
+*   **Scalable Observable Analysis:** Analyze observables at scale.
+*   **Active Threat Response & Collaboration:** Enable real-time team interaction.
+*   **Threat Intelligence Integration:** Enrich data with open-source threat intelligence.
+
+## 🧩 Components
+
+### Phase 1
+
+All components are open-source:
+
+*   **TheHive:** Incident response platform. [GitHub](link-to-thehive-repo)
+*   **Cortex:** Observable analysis tool. [GitHub](link-to-cortex-repo)
+*   **MISP:** Threat intelligence platform. [GitHub](link-to-misp-repo)
+*   **Wazuh:** Security monitoring solution. [GitHub](link-to-wazuh-repo)
+
+### Phase 2 (Planned)
+
+*   **Filebeat:** Lightweight log shipper.
+*   **Ticketing System:** Incident tracking and management.
+
+## 🛠️ Installation
+
+### Requirements
+
+We recommend a VM-based environment, but you can adapt it to your infrastructure.
+
+#### VM Specifications
+
+| Component        | OS          | Size        | Purpose                                   |
+|-----------------|-------------|-------------|-------------------------------------------|
+| MISP            | Ubuntu 20   | t3.micro    | Threat Intelligence                      |
+| Cortex          | Ubuntu 20   | t3a.medium  | Observable Analysis                       |
+| TheHive         | Ubuntu 20   | t2.medium   | Incident Response                         |
+| Wazuh           | Ubuntu 20   | t2.medium   | Security Monitoring                       |
+| Filebeat        | Ubuntu 20   | t2.micro    | Log Shipping                             |
+| Ticketing System | Ubuntu 20   | t2.micro    | Incident Tracking                         |
+
+*(Installation guides for each component will be linked here)*  *(Consider adding more detailed installation steps or links to external guides)*
+
+## ⚙️ Architecture (Work in Progress)
+
+*(Diagram will be inserted here)*  *(A clear, concise diagram is essential)*
+
+## 🚀 Roadmap & Future
+
+### Planned Enhancements
+
+*   ✅ Infrastructure as Code (Ansible/Terraform)
+*   ✅ Advanced Threat Intelligence Integration
+*   ✅ Enhanced Security Dashboards
+
+## 🌏 Network Rules  *(Moved Down Here)*
+
+| Port(s) | Protocol | Allowed IPs | Purpose                                       |
+|---------|----------|-------------|-----------------------------------------------|
+| 22      | TCP      | Your IP     | SSH Access                                     |
+| 443     | TCP      | Your IP     | MISP UI                                      |
+| 9001    | TCP      | Your IP     | Cortex UI                                     |
+| 9000    | TCP      | Your IP     | TheHive UI                                    |
+| 1514    | UDP      | Your IP     | Wazuh Agent Communication                   |
+| 55000   | TCP      | Your IP     | Wazuh API                                     |
+| All TCP |          | Cortex VM IP| Inbound API Access                             |
+| All TCP |          | MISP VM IP  | Inbound API Access                             |
+| All TCP |          | TheHive VM IP| Inbound API Access                             |
 
 
-# 📑Index:
- - [Architecture Diagram](#Architecture-Diagram)
- - [Components used in this Project](#Components)
- - [Installation Requirements](#Installation-Requirements)
- - [Installation Guide First Phase](https://github.com/archanchoudhury/SOC-OpenSource/blob/main/installation/install1.md)
- - [Installation Guide Second Phase](https://github.com/archanchoudhury/SOC-OpenSource/blob/main/installation/install2.md)
- - [Installation Guide Beats Agent](https://github.com/archanchoudhury/SOC-OpenSource/blob/main/installation/beats.md)
- - [Shuffle Automation Install Guide](https://github.com/archanchoudhury/SOC-OpenSource/blob/main/installation/Shuffle-install.md)
- - [Integration Guide First Phase](https://github.com/archanchoudhury/SOC-OpenSource/blob/main/integration/integration.md)
- - [Shuffle Workflow Implementation](#Shuffle-Workflow-Implementation)
- - [Elastic EDR Implementation](#EDR-Implementation)
- - [Contributing](#Contributing)
- - [Support](#Support)
+## 🙌 Contributing
 
-This Projects serves below usecases:
- - **Centralized Data Collection** Aggregate logs from various sources into a single system.
- - **Data Normalization & Parsing** Structure data for consistency and ease of analysis.
- - **Visualize Data** Use Kibana to generate insights into security threats.
- - **Security Analytics & Visualization** Use Kibana to generate insights into security threats.
- - **Incident & Case Management** Automate case creation from security alerts.
- - **Threat Hunting & Automation** Threat Hunting & Automation
- - **Scalable Observable Analysis**Automate analysis of observables at scale by querying a single tool instead of multiple systems.
- - **Active Threat Response & Collaboration** Enable real-time interaction between security teams and stakeholders.
- - **Threat Intelligence Integration** Enrich data feeds with Open Source Threat Intelligence platforms to enhance detection and response capabilities.
+Contributions are welcome! See our [Contributing Guidelines](link-to-contributing) for more information.  *(Make sure you have a CONTRIBUTING.md file)*
 
- 
-# ☸Architecture-Diagram(Ongoing):
-<p align="center"> <img src="images/simpler-soc.png"> </p>
+## 🤝 Support
 
+Need help? Join our [Community Forum](link-to-forum) or contact us at [support@example.com](mailto:support@example.com). *(Provide actual contact information)*
 
-# ☸Components(First Phase of Implementation):
-All of the components used in this projects are Open Source.
- - **TheHive**: TheHive is a scalable 3-in-1 open source Security Incident Response Platform designed to support SOCs, CSIRTs, CERTs, and security teams in investigating and responding to incidents.
-    - Official GitRepo **[HERE](https://github.com/TheHive-Project/TheHive)**
- - **Cortex**: An open-source tool by TheHive Project for analyzing observables such as IP addresses, domain names, and hashes at scale via a Web interface or REST API.
-    - Official GitRepo of Cortex is **[HERE](https://github.com/TheHive-Project/Cortex)**
- - **MISP**: A threat intelligence platform for sharing, storing, and analyzing security incidents and malware indicators.
-   - Official GitRepo of MISP is **[HERE](https://github.com/MISP/MISP)**
-- **Wazuh**: Wazuh is an open-source security monitoring solution for host-based intrusion detection, log analysis, and threat intelligence.
-   - Official GitRepo of Wazuh is **[HERE](https://wazuh.com/)**
-
-
-# ☸Additional Components(Second Phase of Implementation):
- - **Filebeat**:Filebeat is a lightweight shipper for forwarding and centralizing log data.
- - **Company Ticketing System**: An integrated system for tracking and managing security incidents efficiently.
- 
-
-# 🔽Installation-Requirements: 
-We have deployed this project in a VM-based environment. You can follow the same setup or choose an alternative platform based on your infrastructure requirements.
-## ☁VVirtual Machine (VM) Specifications:
-Below are the recommended VM configurations for each component:
-- MISP - Ubuntu 20 - t3.micro (Lightweight instance for threat intelligence sharing)
-- Cortex - Ubuntu 20 - t3a.medium (Can also run on t2.medium)
-- TheHive - Ubuntu 20 - t2.medium (Optimized for incident response and case management)
-- Wazuh - Ubuntu 20 - t2.medium (Security monitoring and log analysis)
-- Filebeat - Ubuntu 20 - t2.micro (Log shipper for data collection)
-- Company Ticketing System - Ubuntu 20 - t2.micro (For tracking and managing security incidents)
-## 🌏Network Rules:
-| Ports | Allowed IPs | Purpose |
-| --- | --- | --- |
-| 22 | Your IP | SSH access to VMs |
-| 443 | Your IP | Accessing MISP UI via browser|
-| 9200 | Your IP | Accessing ElasticSearch|
-| 5601 | Your IP | Accessing Kibana UI
-| 9001 | Your IP | Accessing Cortex UI|
-| 9000 | Your IP | Accessing TheHive UI|
-| All TCP | Cortex VM IP | Accssing inbound API|
-| All TCP | MISP VM IP | Accssing inbound API|
-| All TCP | TheHive VM IP | Accssing inbound API|
-
-# 🤝Contributing
-We welcome your contributions. Please feel free to fork the code, play with it, make some patches and send us pull requests. 
-
-# 🔼Enhancements:
- - As per the architecture document and Components mentioned we will keep on updating this repo with the staged implementation.
- - All of the required staged implemtation will be added in the Index page, so you can access them easily from there.
-
+## 🔥 Let's Build a Secure Cyber Defense Together! 🔥
