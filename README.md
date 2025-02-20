@@ -65,7 +65,7 @@ We recommend a VM-based environment, but you can adapt it to your infrastructure
 
 *(Installation guides for each component will be linked here)*  *(Consider adding more detailed installation steps or links to external guides)*
 
-## ⚙️ Architecture (Work in Progress)
+## ⚙️ Architecture (sample)
 
 ![System Architecture Diagram](images/Diagram.png)
 
