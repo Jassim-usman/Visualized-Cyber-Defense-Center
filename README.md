@@ -32,56 +32,39 @@ This Projects serves below usecases:
 # ☸Architecture-Diagram(Ongoing):
 <p align="center"> <img src="images/simpler-soc.png"> </p>
 
-# ☸Shuffle-SOAR workflow(Ongoing):
-<p align="center"> <img src="images/shuffle-workflow.PNG"> </p>
-
-## ☸Shuffle-Workflow-Implementation
- - For utilizing Shuffle workflow please first refer the installation guideline from Index.
- - Once you have your shuffle instance up and running, please refer to this video [HERE](https://youtu.be/Nb9_ahZMC5U) for full walkthrough.
-
-# ☸Adding EDR to Stack(Ongoing):
-<p align="center"> <img src="images/Part3.png"> </p>
-
-## ☸EDR-Implementation
- - Please Refer the installation guideline from Index.
- - Once you have your Elastic instance up and running, please refer to this video [HERE](https://youtu.be/fXLsY_eZoeE) for full walkthrough.
 
 # ☸Components(First Phase of Implementation):
 All of the components used in this projects are Open Source.
- - **Elastic SIEM**: Open source SIEM platform powered by ElasticSearch, Logstash, Kibana
- - **TheHive**: [TheHive](https://thehive-project.org/) is a scalable 3-in-1 open source and free Security Incident Response Platform designed to make life easier for SOCs, CSIRTs, CERTs and any information security practitioner dealing with security incidents that need to be investigated and acted upon swiftly.
-    - Official GitRepo of TheHive is **[HERE](https://github.com/TheHive-Project/TheHive)**
- - **Cortex**: Cortex, an open source and free software, has been created by TheHive Project for this very purpose. Observables, such as IP and email addresses, URLs, domain names, files or hashes, can be analyzed one by one or in bulk mode using a Web interface. Analysts can also automate these operations thanks to the Cortex REST API.
+ - **TheHive**: TheHive is a scalable 3-in-1 open source Security Incident Response Platform designed to support SOCs, CSIRTs, CERTs, and security teams in investigating and responding to incidents.
+    - Official GitRepo **[HERE](https://github.com/TheHive-Project/TheHive)**
+ - **Cortex**: An open-source tool by TheHive Project for analyzing observables such as IP addresses, domain names, and hashes at scale via a Web interface or REST API.
     - Official GitRepo of Cortex is **[HERE](https://github.com/TheHive-Project/Cortex)**
- - **MISP**: MISP is an open source software solution for collecting, storing, distributing and sharing cyber security indicators and threats about cyber security incidents analysis and malware analysis. MISP is designed by and for incident analysts, security and ICT professionals or malware reversers to support their day-to-day operations to share structured information efficiently.
+ - **MISP**: A threat intelligence platform for sharing, storing, and analyzing security incidents and malware indicators.
    - Official GitRepo of MISP is **[HERE](https://github.com/MISP/MISP)**
+- **Wazuh**: Wazuh is an open-source security monitoring solution for host-based intrusion detection, log analysis, and threat intelligence.
+   - Official GitRepo of Wazuh is **[HERE](https://wazuh.com/)**
+
 
 # ☸Additional Components(Second Phase of Implementation):
- - **Snort**: [Snort](https://www.snort.org/) is the foremost Open Source Intrusion Prevention System (IPS) in the world.
- - **Wazuh**: [Wazuh](https://wazuh.com/) is an open source security monitoring solution which collects and analyzes host security data. It is a fork of the older, better known OSSEC project.
- - **Honeypot Dionea**: [Dionaea](https://dionaea.readthedocs.io/en/latest/index.html) intention is to trap malware exploiting vulnerabilities exposed by services offered to a network, gaining a copy of the malware.
- - **Jupyter Notebook**: The Jupyter Notebook is a web-based interactive computing platform. The notebook combines live code, equations, narrative text, visualizations etc.
-   - Official website of Jupyter is **[HERE](https://jupyter.org/)**
- - **IntelOwl**: [IntelOwl](https://intelowlproject.github.io/) is an Open Source Intelligence, or OSINT solution to get threat intelligence data about a specific file, an IP or a domain from a single API at scale
- - **Atomic Red Team™**: [Atomic Red Team™](https://github.com/redcanaryco/atomic-red-team) is library of tests mapped to the MITRE ATT&CK® framework. Security teams can use Atomic Red Team to quickly, portably, and reproducibly test their environments.
- - **Shuffle**: [Shuffle](https://shuffler.io/) is an Open Source SOAR solution for making orchestration easy between security tools.
- - **Twitter Bot**: We have created Twitter TI bot to collect meaningful intel about anything we care about and thus giving us the related information around them. You can find the episode [HERE](https://youtu.be/onklNNJcfDU)
-
-## ☸Additional Components(Third Phase of Implementation):
- - **Elastic EDR**: [Elastic EDR](https://www.elastic.co/endpoint-security/) prevents ransomware and malware, detects advanced threats, and arms responders with vital context. It’s free and open, ready for every endpoint.
+ - **Filebeat**:Filebeat is a lightweight shipper for forwarding and centralizing log data.
+ - **Company Ticketing System**: An integrated system for tracking and managing security incidents efficiently.
+ 
 
 # 🔽Installation-Requirements: 
-We have created the environment in AWS. You can follow along or choose any other alternative cloud provider. Or ever you can utilize EKS to deploy the full setup.
-## ☁VM Requirements:
- - MISP- Ubuntu20- t3.micro
- - Elastic SIEM- Ubuntu20- t2.medium (Best performence can be achived on t2.large)
- - Cortex- Ubuntu20- t3a.medium (Can work on t2.medium as well)
- - TheHive- Ubuntu20- t2.medium
+We have deployed this project in a VM-based environment. You can follow the same setup or choose an alternative platform based on your infrastructure requirements.
+## ☁VVirtual Machine (VM) Specifications:
+Below are the recommended VM configurations for each component:
+- MISP - Ubuntu 20 - t3.micro (Lightweight instance for threat intelligence sharing)
+- Cortex - Ubuntu 20 - t3a.medium (Can also run on t2.medium)
+- TheHive - Ubuntu 20 - t2.medium (Optimized for incident response and case management)
+- Wazuh - Ubuntu 20 - t2.medium (Security monitoring and log analysis)
+- Filebeat - Ubuntu 20 - t2.micro (Log shipper for data collection)
+- Company Ticketing System - Ubuntu 20 - t2.micro (For tracking and managing security incidents)
 ## 🌏Network Rules:
-| Ports | IP Ranges | Comments |
+| Ports | Allowed IPs | Purpose |
 | --- | --- | --- |
-| 22 | Your IP | SSH to the VMs |
-| 443 | Your IP | Accessing MISP UI on browser|
+| 22 | Your IP | SSH access to VMs |
+| 443 | Your IP | Accessing MISP UI via browser|
 | 9200 | Your IP | Accessing ElasticSearch|
 | 5601 | Your IP | Accessing Kibana UI
 | 9001 | Your IP | Accessing Cortex UI|
