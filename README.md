@@ -36,10 +36,10 @@ This project addresses key security use cases:
 
 All components are open-source:
 
-*   **TheHive:** Incident response platform. [GitHub](link-to-thehive-repo)
-*   **Cortex:** Observable analysis tool. [GitHub](link-to-cortex-repo)
-*   **MISP:** Threat intelligence platform. [GitHub](link-to-misp-repo)
-*   **Wazuh:** Security monitoring solution. [GitHub](link-to-wazuh-repo)
+*   **TheHive:** Incident response platform. [GitHub](https://github.com/TheHive-Project/TheHive)
+*   **Cortex:** Observable analysis tool. [GitHub](https://github.com/cortexproject/cortex)
+*   **MISP:** Threat intelligence platform. [GitHub](https://github.com/MISP/MISP)
+*   **Wazuh:** Security monitoring solution. [GitHub](https://github.com/wazuh/wazuh)
 
 ### Phase 2 (optional)
 
