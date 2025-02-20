@@ -67,7 +67,7 @@ We recommend a VM-based environment, but you can adapt it to your infrastructure
 
 ## ⚙️ Architecture (Work in Progress)
 
-*(Diagram will be inserted here)*  *(A clear, concise diagram is essential)*
+![System Architecture Diagram](images/Diagram.png)
 
 ## 🚀 Roadmap & Future
 
