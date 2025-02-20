@@ -64,5 +64,5 @@ fully customized. These are the configuration files locations:
 2. Wazuh indexer: /etc/wazuh-indexer/opensearch.yml
 3. Filebeat-OSS: /etc/filebeat/filebeat.yml
 4. Wazuh dashboard:
-            - /etc/wazuh-dashboard/opensearch_dashboards.yml
-            - /usr/share/wazuh-dashboard/data/wazuh/config/wazuh.yml
+   - /etc/wazuh-dashboard/opensearch_dashboards.yml
+   - /usr/share/wazuh-dashboard/data/wazuh/config/wazuh.yml
