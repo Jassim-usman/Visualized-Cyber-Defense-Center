@@ -99,5 +99,3 @@ Contributions are welcome! See our [Contributing Guidelines](link-to-contributin
 ## 🤝 Support
 
 Need help? contact me at [jassimusman66@gmail.com](mailto:jassimusman66@gmail.com). 
-
-## 🔥 Let's Build a Secure Cyber Defense Together! 🔥
