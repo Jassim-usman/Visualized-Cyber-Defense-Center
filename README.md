@@ -77,7 +77,7 @@ We recommend a VM-based environment, but you can adapt it to your infrastructure
 *   ✅ Advanced Threat Intelligence Integration
 *   ✅ Enhanced Security Dashboards
 
-## 🌏 Network Rules  *(Moved Down Here)*
+## 🌏 Network Rules  
 
 | Port(s) | Protocol | Allowed IPs | Purpose                                       |
 |---------|----------|-------------|-----------------------------------------------|
@@ -94,7 +94,7 @@ We recommend a VM-based environment, but you can adapt it to your infrastructure
 
 ## 🙌 Contributing
 
-Contributions are welcome! See our [Contributing Guidelines](link-to-contributing) for more information.  *(Make sure you have a CONTRIBUTING.md file)*
+Contributions are welcome! See our [Contributing Guidelines](link-to-contributing) for more information.
 
 ## 🤝 Support
 
