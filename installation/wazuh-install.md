@@ -26,9 +26,9 @@ imported into a host operating system:
 1. Import the OVA to the virtualization platform.
 2. If you're using VirtualBox, set the VMSVGA graphic controller. Setting
    another graphic controller freezes the VM window.
-             -  Select the imported VM.
-             -  Click Settings > Display
-             -  In Graphic controller, select the VMSVGA option.
+    - Select the imported VM.
+    - Click Settings > Display
+    - In Graphic controller, select the VMSVGA option.
 3. Start the machine.
 4. Access the virtual machine using the following user and password. You can
    use the virtualization platform or access it via SSH.
