@@ -1,4 +1,4 @@
-# 🛡️ Visualized Cyber Defense Center
+#  🛡️ Visualized Cyber Defense Center
 
 **Building a robust SOC is crucial.** This project empowers you to explore and implement a modern SOC architecture using open-source tools. Dive into threat detection, analysis, and response!
 
@@ -63,7 +63,6 @@ We recommend a VM-based environment, but you can adapt it to your infrastructure
 | Filebeat        | Ubuntu 20   | t2.micro    | Log Shipping                             |
 | Ticketing System | Ubuntu 20   | t2.micro    | Incident Tracking                         |
 
-*(Installation guides for each component will be linked here)*  *(Consider adding more detailed installation steps or links to external guides)*
 
 ## ⚙️ Architecture (sample)
 
