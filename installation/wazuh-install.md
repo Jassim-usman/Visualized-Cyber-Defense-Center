@@ -35,3 +35,34 @@ imported into a host operating system:
 
                       user: wazuh-user
                       password: wazuh
+
+SSH root user login has been deactivated; nevertheless, the wazuh-user
+retains sudo privileges. Root privilege escalation can be achieved by
+executing the following command:
+
+                     sudo -i
+
+# Access the Wazuh dashboard:
+1. Shortly after starting the VM, the Wazuh dashboard can be accessed from
+the web interface by using the following credentials:
+
+                 URL: https://<wazuh_server_ip>
+                 user: admin
+                 password: admin
+
+2. You can find <wazuh_server_ip> by typing the following command in the
+   VM:
+                   ip a
+
+# Configuration files:
+
+All components included in this virtual image are configured to work out-of-the-
+box, without the need to modify any settings. However, all components can be
+fully customized. These are the configuration files locations:
+
+1. Wazuh manager: /var/ossec/etc/ossec.conf
+2. Wazuh indexer: /etc/wazuh-indexer/opensearch.yml
+3. Filebeat-OSS: /etc/filebeat/filebeat.yml
+4. Wazuh dashboard:
+            - /etc/wazuh-dashboard/opensearch_dashboards.yml
+            - /usr/share/wazuh-dashboard/data/wazuh/config/wazuh.yml
