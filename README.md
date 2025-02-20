@@ -41,7 +41,7 @@ All components are open-source:
 *   **MISP:** Threat intelligence platform. [GitHub](link-to-misp-repo)
 *   **Wazuh:** Security monitoring solution. [GitHub](link-to-wazuh-repo)
 
-### Phase 2 (Planned)
+### Phase 2 (optional)
 
 *   **Filebeat:** Lightweight log shipper.
 *   **Ticketing System:** Incident tracking and management.
