@@ -1,4 +1,4 @@
-#Wazuh Installation Guide
+# Wazuh Installation Guide
 
 
 Wazuh provides a pre-built virtual machine image in Open Virtual Appliance
