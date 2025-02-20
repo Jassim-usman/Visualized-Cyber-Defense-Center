@@ -98,6 +98,6 @@ Contributions are welcome! See our [Contributing Guidelines](link-to-contributin
 
 ## 🤝 Support
 
-Need help? Join our [Community Forum](link-to-forum) or contact us at [support@example.com](mailto:support@example.com). *(Provide actual contact information)*
+Need help? contact me at [jassimusman66@gmail.com](mailto:jassimusman66@gmail.com). 
 
 ## 🔥 Let's Build a Secure Cyber Defense Together! 🔥
