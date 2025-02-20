@@ -1,18 +1,7 @@
 # Visualized-Cyber-Defense-Center
 
-This is a Project Designed for Security Analysts and all SOC audiences who wants to play with implementation and explore the Modern SOC architecture. All of the componenets are used based on Open Source Projects(Availabe at the time of first commit). 
+This project is designed to implement a comprehensive SOC setup, providing an opportunity to explore and experiment with modern SOC architecture. It leverages open-source components available at the time of the first commit, offering a robust foundation for security analysis and operations.
 
-<ins> **NOTE - This is an Ongoing Project and the repo will be updated as we work on the new additions.** </ins>
-
-This Projects serves below usecases:
- - **Collect Data** to a Single Place.
- - **Normalize** and **Parse Data**
- - **Visualize Data** and prepare meaningful Security Analytics
- - Create **Incidents/Cases** out of Security Alerts identified based on collected data/logs
- - **Automate** process of Threat Hunt, Creation of actionable Playbooks, SOC data Analytics
- - **Automate** the process of analsis observables they have collected, **at scale, by querying a single tool** instead of several
- - Actively respond to threats and interact with the constituency and other teams
- - **Enrich** Data feeds with Open Source Threat Intelligence Platoform
 
 # 📑Index:
  - [Architecture Diagram](#Architecture-Diagram)
@@ -28,6 +17,18 @@ This Projects serves below usecases:
  - [Contributing](#Contributing)
  - [Support](#Support)
 
+This Projects serves below usecases:
+ - **Centralized Data Collection** Aggregate logs from various sources into a single system.
+ - **Data Normalization & Parsing** Structure data for consistency and ease of analysis.
+ - **Visualize Data** Use Kibana to generate insights into security threats.
+ - **Security Analytics & Visualization** Use Kibana to generate insights into security threats.
+ - **Incident & Case Management** Automate case creation from security alerts.
+ - **Threat Hunting & Automation** Threat Hunting & Automation
+ - **Scalable Observable Analysis**Automate analysis of observables at scale by querying a single tool instead of multiple systems.
+ - **Active Threat Response & Collaboration** Enable real-time interaction between security teams and stakeholders.
+ - **Threat Intelligence Integration** Enrich data feeds with Open Source Threat Intelligence platforms to enhance detection and response capabilities.
+
+ 
 # ☸Architecture-Diagram(Ongoing):
 <p align="center"> <img src="images/simpler-soc.png"> </p>
 
@@ -96,7 +97,3 @@ We welcome your contributions. Please feel free to fork the code, play with it, 
  - As per the architecture document and Components mentioned we will keep on updating this repo with the staged implementation.
  - All of the required staged implemtation will be added in the Index page, so you can access them easily from there.
 
-# 🙏Support
- - Please [open an issue on GitHub](https://github.com/archanchoudhury/SOC-OpenSource/issues/new) if you'd like to report a bug or request a feature.
- - For real DFIR Training, subscribe to my [YouTube Channel](https://www.youtube.com/c/BlackPerl)
- - If you like to support my creation, <p align="left"><a href="https://www.buymeacoffee.com/BlackPerl"> <img src="images/KULQlzAg.png" width="210" height="60"></p>
