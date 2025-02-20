@@ -32,3 +32,6 @@ imported into a host operating system:
 3. Start the machine.
 4. Access the virtual machine using the following user and password. You can
    use the virtualization platform or access it via SSH.
+
+                      user: wazuh-user
+                      password: wazuh
