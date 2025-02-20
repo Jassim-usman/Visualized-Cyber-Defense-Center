@@ -52,7 +52,8 @@ the web interface by using the following credentials:
 
 2. You can find <wazuh_server_ip> by typing the following command in the
    VM:
-                   ip a
+
+                      ip a
 
 # Configuration files:
 
