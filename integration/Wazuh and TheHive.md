@@ -68,11 +68,6 @@
                        sudo chown root:ossec /var/ossec/integrations/custom-w2thive.py
                        sudo chown root:ossec /var/ossec/integrations/custom-w2thive
 
-   # NOTE:
-
-        - The correct ownership for Wazuh 4.3.0 is root:wazuh.
-
-   
 
    7. Allow Wazuh to run the integration script, Add the following lines to the manager
       conﬁguration ﬁle located at /var/ossec/etc/ossec.conf.
@@ -81,12 +76,12 @@
       # <ossec_config>
       ...
 
-      <integration>
-      <name>custom-w2thive</name>
-      <hook_url>http://TheHive_Server_IP:9000</hook_url>
-      <api_key>RWw/Ii0yE6l+Nnd3nv3o3Uz+5UuHQYTM</api_key>
-      <alert_format>json</alert_format>
-      </integration>
+               <integration>
+               <name>custom-w2thive</name>
+               <hook_url>http://TheHive_Server_IP:9000</hook_url>
+               <api_key>RWw/Ii0yE6l+Nnd3nv3o3Uz+5UuHQYTM</api_key>
+               <alert_format>json</alert_format>
+               </integration>
 
       ...
       # <ossec_config>
