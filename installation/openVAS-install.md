@@ -1,4 +1,4 @@
-# openVAS Installation Guide
+# OPENVAS Installation Guide
 
 # PREREQUISITES:
 
