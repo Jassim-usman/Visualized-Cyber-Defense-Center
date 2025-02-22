@@ -72,6 +72,8 @@
 
         - The correct ownership for Wazuh 4.3.0 is root:wazuh.
 
+   
+
    7. Allow Wazuh to run the integration script, Add the following lines to the manager
       conﬁguration ﬁle located at /var/ossec/etc/ossec.conf.
    8. Insert the IP address for TheHive server along with the API key that was generated earlier:
