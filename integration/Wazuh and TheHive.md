@@ -60,8 +60,8 @@
                       esac
                       ${WAZUH_PATH}/${WPYTHON_BIN} ${PYTHON_SCRIPT} $@
 
-   6. Change the ﬁles’ permission and the ownership to ensure that Wazuh has adequate
-      permissions to access and run them:
+ 6. Change the ﬁles’ permission and the ownership to ensure that Wazuh has adequate
+    permissions to access and run them:
 
                        sudo chmod 755 /var/ossec/integrations/custom-w2thive.py
                        sudo chmod 755 /var/ossec/integrations/custom-w2thive
@@ -69,9 +69,9 @@
                        sudo chown root:ossec /var/ossec/integrations/custom-w2thive
 
 
-   7. Allow Wazuh to run the integration script, Add the following lines to the manager
-      conﬁguration ﬁle located at /var/ossec/etc/ossec.conf.
-   8. Insert the IP address for TheHive server along with the API key that was generated earlier:
+ 7. Allow Wazuh to run the integration script, Add the following lines to the manager
+    conﬁguration ﬁle located at /var/ossec/etc/ossec.conf.
+ 8. Insert the IP address for TheHive server along with the API key that was generated earlier:
 
       # <ossec_config>
       ...
@@ -86,14 +86,14 @@
       ...
       # <ossec_config>
 
-   9. Restart the manager to apply the changes:
+ 9. Restart the manager to apply the changes:
 
                sudo systemctl restart wazuh-manager
 
-   10. Log into TheHive with our test user account, and we can see Wazuh generated alerts
+ 10. Log into TheHive with our test user account, and we can see Wazuh generated alerts
        under the “Alerts” tab:
 
-   11. At this point, we can proceed to perform other standard TheHive actions on the alerts,
+ 11. At this point, we can proceed to perform other standard TheHive actions on the alerts,
        such as creating cases on them or adding them to other existing cases.   
 
 # Conclusion:
